@@ -1,7 +1,0 @@
-.band { background: var(--color-accent-soft); }
-.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-block: 34px; }
-.item { display: flex; align-items: baseline; gap: 10px; }
-.item strong { font-family: var(--font-display); font-size: 2.3rem; line-height: 1; color: var(--color-primary); }
-.item span { font-size: 0.95rem; font-weight: 600; }
-@media (max-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 480px) { .grid { grid-template-columns: 1fr; gap: 12px; } }

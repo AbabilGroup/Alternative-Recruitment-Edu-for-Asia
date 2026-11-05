@@ -1,4 +1,0 @@
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-.card { margin: 0; padding: 30px; border-radius: var(--radius-md); background: var(--color-white); box-shadow: var(--shadow-card); }
-.card blockquote { margin: 0 0 18px; }
-.card figcaption { color: var(--color-muted); font-size: 0.93rem; }

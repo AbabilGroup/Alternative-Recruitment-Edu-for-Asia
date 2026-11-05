@@ -1,6 +1,5 @@
 import { destinations } from "@/data/destinations";
 import { services, steps } from "@/data/services";
-import styles from "./Numbers.module.css";
 
 export default function Numbers() {
   const items = [
@@ -10,12 +9,12 @@ export default function Numbers() {
     { value: 1, label: "free first consultation" },
   ];
   return (
-    <section className={styles.band}>
-      <div className={`container ${styles.grid}`}>
+    <section className="bg-accent-soft">
+      <div className="site-container grid grid-cols-1 gap-3 py-[34px] sm:grid-cols-2 sm:gap-5 md:grid-cols-4">
         {items.map((i) => (
-          <div key={i.label} className={styles.item}>
-            <strong>{i.value}</strong>
-            <span>{i.label}</span>
+          <div key={i.label} className="flex items-baseline gap-2.5">
+            <strong className="font-display text-[2.3rem] leading-none text-primary">{i.value}</strong>
+            <span className="text-[0.95rem] font-semibold">{i.label}</span>
           </div>
         ))}
       </div>

@@ -14,7 +14,7 @@ export default function DestinationsPage() {
         image="/images/campus.webp"
       />
       <section className="section section-tinted">
-        <div className="container"><DestinationGrid /></div>
+        <div className="site-container"><DestinationGrid /></div>
       </section>
       <FinalCta />
     </>

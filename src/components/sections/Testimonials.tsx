@@ -1,21 +1,20 @@
 import { testimonials } from "@/data/faqs";
-import styles from "./Testimonials.module.css";
 
 // Renders nothing until real reviews are added to src/data/faqs.ts.
 export default function Testimonials() {
   if (testimonials.length === 0) return null;
   return (
     <section className="section section-tinted">
-      <div className="container">
+      <div className="site-container">
         <div className="section-head">
           <span className="eyebrow">Student stories</span>
           <h2>In their own words</h2>
         </div>
-        <div className={styles.grid}>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
           {testimonials.map((t) => (
-            <figure key={t.name} className={styles.card}>
-              <blockquote>{t.quote}</blockquote>
-              <figcaption><strong>{t.name}</strong>, {t.destination}</figcaption>
+            <figure key={t.name} className="rounded-md bg-white p-[30px] shadow-card">
+              <blockquote className="mb-[18px]">{t.quote}</blockquote>
+              <figcaption className="text-[0.93rem] text-muted"><strong>{t.name}</strong>, {t.destination}</figcaption>
             </figure>
           ))}
         </div>

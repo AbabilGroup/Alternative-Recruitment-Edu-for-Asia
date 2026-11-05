@@ -1,4 +1,0 @@
-.body { max-width: 760px; }
-.body h1 { font-size: clamp(2.2rem, 4vw, 3rem); margin-bottom: 28px; }
-.body h2 { margin: 32px 0 10px; font-size: 1.35rem; }
-.body p { color: var(--color-muted); }

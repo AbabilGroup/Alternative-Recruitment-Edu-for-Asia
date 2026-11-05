@@ -26,7 +26,7 @@ The site expects to run at the domain root. For a subfolder, set `basePath` in `
 
 ## Where things live
 
-- `src/styles/global.css`: all colours and layout tokens, as CSS variables
+- `src/styles/global.css`: Tailwind CSS setup, with all colours as CSS variables (for example `--color-primary` gives `bg-primary`)
 - `src/data/`: site details, destinations, services, FAQs
 - `src/pages/`: routes
 - `src/components/`: `layout`, `sections` and `ui`
