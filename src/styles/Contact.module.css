@@ -1,0 +1,11 @@
+.page { background: var(--color-primary-dark); color: var(--color-on-dark); }
+.grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(36px, 6vw, 72px); align-items: start; padding-block: clamp(56px, 8vw, 96px); }
+.eyebrow { display: block; margin-bottom: 14px; color: var(--color-accent); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.intro h1 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); }
+.intro p { margin-top: 20px; color: var(--color-on-dark-muted); font-size: 1.1rem; }
+.contacts { display: grid; gap: 14px; margin-top: 32px; }
+.contacts li { display: flex; align-items: center; gap: 12px; }
+.contacts svg { flex: none; color: var(--color-accent); }
+.contacts a { text-decoration: none; overflow-wrap: anywhere; }
+.contacts a:hover { color: var(--color-accent); }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }

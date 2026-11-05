@@ -1,0 +1,20 @@
+.section { background: var(--color-primary); color: var(--color-on-dark); }
+.head { max-width: 640px; margin-bottom: 56px; }
+.eyebrow { display: block; margin-bottom: 14px; color: var(--color-accent); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.route { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 26px; margin: 0; padding: 0; list-style: none; }
+/* Dashed flight path that joins the stops */
+.route::before { content: ""; position: absolute; top: 24px; left: 24px; right: 10%; border-top: 2px dashed var(--color-on-dark-border); }
+.route li { position: relative; }
+.stop {
+  display: grid; place-items: center; width: 50px; height: 50px; margin-bottom: 20px; border-radius: 50%;
+  background: var(--color-accent); color: var(--color-ink); font-family: var(--font-display); font-size: 1.3rem; font-weight: 800;
+}
+.route h3 { font-size: 1.16rem; }
+.route p { margin-top: 8px; color: var(--color-on-dark-muted); font-size: 0.96rem; }
+.action { margin-top: 48px; }
+@media (max-width: 900px) {
+  .route { grid-template-columns: 1fr; gap: 30px; }
+  .route::before { top: 10px; bottom: 40px; left: 24px; right: auto; border-top: 0; border-left: 2px dashed var(--color-on-dark-border); }
+  .route li { padding-left: 70px; }
+  .stop { position: absolute; left: 0; top: 0; }
+}

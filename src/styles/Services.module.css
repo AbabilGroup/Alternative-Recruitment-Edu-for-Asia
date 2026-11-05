@@ -1,0 +1,12 @@
+.list { display: grid; gap: clamp(56px, 8vw, 96px); }
+.row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(32px, 6vw, 72px); }
+.row:nth-child(even) .photo { order: 2; }
+.photo { position: relative; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--radius-lg); }
+.image { object-fit: cover; }
+.icon { display: grid; place-items: center; width: 50px; height: 50px; margin-bottom: 18px; border-radius: 12px; background: var(--color-accent-soft); color: var(--color-primary); }
+.row h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.summary { margin-top: 12px; color: var(--color-muted); font-size: 1.08rem; }
+.details { display: grid; gap: 10px; margin-top: 20px; }
+.details li { display: flex; gap: 10px; }
+.details svg { flex: none; margin-top: 5px; color: var(--color-primary-light); }
+@media (max-width: 860px) { .row { grid-template-columns: 1fr; } .row:nth-child(even) .photo { order: 0; } }

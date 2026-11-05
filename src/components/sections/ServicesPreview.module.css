@@ -1,0 +1,8 @@
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { padding: 30px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-white); color: var(--color-ink); text-decoration: none; transition: border-color 0.2s, transform 0.2s; }
+.card:hover { border-color: var(--color-primary-light); transform: translateY(-3px); }
+.icon { display: grid; place-items: center; width: 50px; height: 50px; margin-bottom: 20px; border-radius: 12px; background: var(--color-accent-soft); color: var(--color-primary); }
+.card p { margin-top: 10px; color: var(--color-muted); font-size: 0.98rem; }
+.action { margin-top: 40px; text-align: center; }
+@media (max-width: 960px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }

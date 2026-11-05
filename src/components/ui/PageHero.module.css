@@ -1,0 +1,8 @@
+.hero { position: relative; overflow: hidden; background: var(--color-primary-dark); color: var(--color-on-dark); }
+.image { object-fit: cover; }
+.overlay { position: absolute; inset: 0; background: linear-gradient(90deg, var(--color-overlay-strong) 15%, var(--color-overlay) 60%, var(--color-overlay-none) 100%); }
+.content { position: relative; padding-block: clamp(72px, 10vw, 128px); }
+.eyebrow { display: block; margin-bottom: 14px; color: var(--color-accent); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.content h1 { max-width: 760px; }
+.content p { max-width: 620px; margin-top: 20px; color: var(--color-on-dark-muted); font-size: 1.15rem; }
+@media (max-width: 720px) { .overlay { background: var(--color-overlay-strong); } }

@@ -1,0 +1,22 @@
+.card {
+  display: flex; flex-direction: column; height: 100%; border-radius: var(--radius-md); background: var(--color-white);
+  color: var(--color-ink); text-decoration: none; box-shadow: var(--shadow-card); transition: transform 0.25s;
+}
+.card:hover { transform: translateY(-5px); }
+.photo { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--radius-md) var(--radius-md) 0 0; }
+.image { object-fit: cover; transition: transform 0.5s; }
+.card:hover .image { transform: scale(1.05); }
+.code {
+  position: absolute; top: 14px; left: 14px; padding: 4px 10px; border-radius: 6px; background: var(--color-accent);
+  color: var(--color-ink); font-family: var(--font-display); font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em;
+}
+.stub { position: relative; display: flex; flex: 1; flex-direction: column; padding: 24px 22px 22px; border-top: 2px dashed var(--color-border); }
+/* Ticket notches, filled with the page background behind the card */
+.stub::before, .stub::after { content: ""; position: absolute; top: -12px; width: 22px; height: 22px; border-radius: 50%; background: var(--color-bg); }
+.stub::before { left: -11px; }
+.stub::after { right: -11px; }
+.stub p { margin-top: 6px; color: var(--color-muted); font-size: 0.96rem; }
+.meta { margin-top: 16px; }
+.label { display: block; color: var(--color-muted); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.value { font-size: 0.92rem; font-weight: 600; }
+.more { display: inline-flex; align-items: center; gap: 6px; margin-top: auto; padding-top: 16px; color: var(--color-primary-light); font-size: 0.93rem; font-weight: 700; }

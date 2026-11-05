@@ -1,0 +1,17 @@
+.hero { background: var(--color-primary-dark); color: var(--color-on-dark); }
+.grid { display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 56px; padding-block: clamp(56px, 7vw, 92px) clamp(72px, 8vw, 104px); }
+.eyebrow { display: block; margin-bottom: 18px; color: var(--color-accent); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.copy h1 em { color: var(--color-accent); font-style: normal; }
+.copy p { max-width: 560px; margin-top: 22px; color: var(--color-on-dark-muted); font-size: 1.15rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.visual { position: relative; }
+.photo { position: relative; aspect-ratio: 5 / 4.6; overflow: hidden; border-radius: var(--radius-lg); }
+.image { object-fit: cover; }
+.ticket {
+  position: absolute; left: 50%; bottom: -30px; transform: translateX(-50%); display: flex; align-items: center; gap: 22px;
+  width: max-content; max-width: 92%; padding: 15px 26px; border-radius: var(--radius-md); background: var(--color-white); color: var(--color-ink); box-shadow: var(--shadow-card);
+}
+.label { display: block; color: var(--color-muted); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.ticket strong { font-family: var(--font-display); font-size: 1.1rem; white-space: nowrap; }
+.plane { flex: none; color: var(--color-accent-dark); }
+@media (max-width: 960px) { .grid { grid-template-columns: 1fr; gap: 44px; } }

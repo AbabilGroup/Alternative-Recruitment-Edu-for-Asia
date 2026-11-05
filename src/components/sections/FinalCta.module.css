@@ -1,0 +1,5 @@
+.cta { position: relative; overflow: hidden; color: var(--color-on-dark); text-align: center; }
+.image { object-fit: cover; object-position: center 30%; }
+.overlay { position: absolute; inset: 0; background: var(--color-overlay); }
+.content { position: relative; padding-block: clamp(80px, 11vw, 136px); }
+.content p { max-width: 540px; margin: 16px auto 30px; color: var(--color-on-dark); font-size: 1.15rem; }
